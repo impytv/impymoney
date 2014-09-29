@@ -1,0 +1,21 @@
+<h1>Recurrence types</h1>
+
+<%= link_to 'Overview', controller: 'welcome' %><br>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Recurrence code</th>
+    <th>Interval type</th>
+    <th>Interval length</th>
+  </tr>
+  <% @recurrence_types.each do |recurrence_type| %>
+    <tr>
+      <td><%= recurrence_type.description %></td>
+      <td><%= recurrence_type.recurrence_code %></td>
+      <td><%= recurrence_type.interval_type %></td>
+      <td><%= recurrence_type.interval_length %></td>
+    </tr>
+  <% end %>
+</table>
+

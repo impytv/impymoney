@@ -1,0 +1,21 @@
+<h1>Iterations</h1>
+
+<%= link_to 'Overview', controller: 'welcome' %><br>
+
+<table>
+  <tr>
+    <th>Recurrence code</th>
+    <th>Iteration</th>
+    <th>Interval type</th>
+    <th>Stride</th>
+  </tr>
+  <% @iterations.each do |iteration| %>
+    <tr>
+      <td><%= iteration.recurrence_code %></td>
+      <td><%= iteration.iteration %></td>
+      <td><%= iteration.interval_type %></td>
+      <td><%= iteration.stride %></td>
+    </tr>
+  <% end %>
+</table>
+
